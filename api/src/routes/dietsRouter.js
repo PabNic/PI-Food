@@ -1,9 +1,9 @@
 const { Router } = require('express');
-const { getDiets } = require('../handlers/dietHandler');
+const getAllDiets = require('../controllers/diets/getAllDiets');
+const router = Router();
 
+router.get('/', (req, res) => {
+  getAllDiets(req, res);
+});
 
-const dietsRouter = Router()
-
-dietsRouter.get("/", getDiets)
-
-module.exports = dietsRouter;
+module.exports = router;
