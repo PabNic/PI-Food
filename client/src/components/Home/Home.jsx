@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { getAllR, getAllD } from '../../redux/actions';
 import FilterOptions from '../FilterOptions/FilterOptions.jsx';
 import Pagination from '../Pagination/Pagination';
-import Card from '../Card/Card';
+import Card from '../Cards/Cards';
 import styles from './Home.module.css';
 import { Link } from 'react-router-dom';
 

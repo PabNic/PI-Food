@@ -1,6 +1,6 @@
 export function validate({ data }) {
     const errors = {};
-    const regexURL = /^https?:\/\/[\w\-]+(\.[\w\-]+)+[/#?]?.*$/;
+    const regexURL = /^https?:\/\/[\w]+(\.[\w]+)+[/#?]?.*$/;
   
     if (!data.name) errors.name = 'Se debe ingresar un nombre a la receta';
     if (data.name.length < 4) errors.name = 'Longitud insuficiente';

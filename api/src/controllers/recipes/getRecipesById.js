@@ -1,4 +1,4 @@
-const { Recipe, Diets } = require('../../db');
+const { Recipe } = require('../../db');
 const axios = require('axios');
 require('dotenv').config();
 const { URL_API, API_KEY } = process.env;

@@ -3,7 +3,7 @@ import { Home } from './components/Home/Home.jsx';
 import { Route, useLocation } from 'react-router-dom';
 import Details from './components/Details/Details';
 import FormCreate from './components/FormToCreate/FormToCreate';
-import NavBar from './components/Navbar/NavBar';
+import NavBar from './components/NavBar/NavBar';
 import LandigPage from './components/LandingPage/LandingPage';
 
 function App() {

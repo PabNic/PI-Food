@@ -49,7 +49,7 @@
     flex-direction: column;
     flex-wrap: nowrap;
     justify-content: space-evenly;
-    align-items: start;
+    align-items: flex-start;
     background-image: url('https://img.freepik.com/foto-gratis/vista-superior-verduras-espacio-copia_23-2148853317.jpg?w=1060&t=st=1679718837~exp=1679719437~hmac=7f7ca4f062a6e651083adbbf4297b3ae10f105f3aaa3396abdb18ae7bc6c5888');
     background-size: cover;
     height: 711px;

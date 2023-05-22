@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import style from './Card.module.css';
+import style from './Cards.module.css'
 
 const Card = (props) => {
   const dietsString = props.diets?.map((diet, index) => {

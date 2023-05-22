@@ -18,20 +18,20 @@ const getRecipesByQuery = async (req, res) => {
       );
 
       const response = await axios(
-        `${URL_API}/complexSearch?apiKey=${API_KEY}&&number=100&&addRecipeInformation=true&&instructionsRequired=true`
+        `${URL_API}/complexSearch?apiKey=${API_KEY}&&number=100&&addRecipeInformation=true`
       );
-      const recipeDetail = response.data.results.map((elemento) => {
+      const recipeDetail = response.data.results.map((element) => {
         return {
-          id: elemento.id,
-          name: elemento.title,
-          image: elemento.image,
-          healthScore: elemento.healthScore,
-          summary: elemento.summary,
-          diets: elemento.diets,
-          steps: elemento.analyzedInstructions[0]?.steps.map((element) => {
+          id: element.id,
+          name: element.title,
+          image: element.image,
+          healthScore: element.healthScore,
+          summary: element.summary,
+          diets: element.diets,
+          steps: element.analyzedInstructions[0]?.steps.map((elem) => {
             return {
-              number: element.number,
-              step: element.step,
+              number: elem.number,
+              step: elem.step,
             };
           }),
         };
